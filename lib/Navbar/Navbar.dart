@@ -43,14 +43,14 @@ class DesktopNavbar extends StatelessWidget {
                   width: 30,
                 ),
                 Text(
-                  "Knowledge",
+                  "Projects",
                   style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(
                   width: 30,
                 ),
                 Text(
-                  "Projects",
+                  "Experience",
                   style: TextStyle(color: Colors.white),
                 ),
                 SizedBox(
@@ -59,7 +59,10 @@ class DesktopNavbar extends StatelessWidget {
                 MaterialButton(
                   color: Color(0xFFA43931),
                   shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(20.0))),
+                    borderRadius: BorderRadius.all(
+                      Radius.circular(20.0),
+                    ),
+                  ),
                   onPressed: () {},
                   child: Text(
                     "Contact",
@@ -81,39 +84,43 @@ class MobileNavbar extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 20, horizontal: 40),
       child: Container(
-        child: Column(children: <Widget>[
-          Text(
-            "Portfolio",
-            style: TextStyle(
-                fontWeight: FontWeight.bold, color: Colors.white, fontSize: 30),
-          ),
-          Padding(
-            padding: const EdgeInsets.all(12.0),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                Text(
-                  "Introduction",
-                  style: TextStyle(color: Colors.white),
-                ),
-                SizedBox(
-                  width: 30,
-                ),
-                Text(
-                  "Knowledge",
-                  style: TextStyle(color: Colors.white),
-                ),
-                SizedBox(
-                  width: 30,
-                ),
-                Text(
-                  "Projects",
-                  style: TextStyle(color: Colors.white),
-                ),
-              ],
+        child: Column(
+          children: <Widget>[
+            Text(
+              "Portfolio",
+              style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                  fontSize: 30),
             ),
-          )
-        ]),
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    "Introduction",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Text(
+                    "Projects",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                  SizedBox(
+                    width: 30,
+                  ),
+                  Text(
+                    "Experience",
+                    style: TextStyle(color: Colors.white),
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
