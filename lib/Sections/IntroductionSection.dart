@@ -6,17 +6,11 @@ class IntroductionSection extends StatelessWidget {
     return LayoutBuilder(
       builder: (context, constraints) {
         if (constraints.maxWidth > 1200) {
-          return IntroductionSectionWidget(
-            containerHeight: constraints.maxHeight,
-          );
+          return IntroductionSectionWidget();
         } else if (constraints.maxWidth > 800 && constraints.maxWidth < 1200) {
-          return IntroductionSectionWidget(
-            containerHeight: constraints.maxHeight,
-          );
+          return IntroductionSectionWidget();
         } else {
-          return IntroductionSectionWidget(
-            containerHeight: constraints.maxHeight,
-          );
+          return IntroductionSectionWidget();
         }
       },
     );
@@ -24,9 +18,6 @@ class IntroductionSection extends StatelessWidget {
 }
 
 class IntroductionSectionWidget extends StatelessWidget {
-  IntroductionSectionWidget({@required this.containerHeight});
-
-  final double containerHeight;
   List<Widget> pageChildren(double width) {
     return <Widget>[
       Container(
@@ -53,12 +44,9 @@ class IntroductionSectionWidget extends StatelessWidget {
       ),
       Padding(
         padding: const EdgeInsets.symmetric(vertical: 20.0),
-        child: Padding(
-          padding: const EdgeInsets.fromLTRB(0, 0, 0, 110),
-          child: new Image.asset(
-            "assets/images/Dedicated.png",
-            width: width,
-          ),
+        child: new Image.asset(
+          "assets/images/Dedicated.png",
+          width: width,
         ),
       )
     ];

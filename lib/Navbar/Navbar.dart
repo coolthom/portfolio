@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:portfolio/Widgets/NavItem.dart';
+import 'package:portfolio/Extensions/HoverExtensions.dart';
 
 class Navbar extends StatelessWidget {
   @override
@@ -35,23 +37,23 @@ class DesktopNavbar extends StatelessWidget {
             ),
             Row(
               children: <Widget>[
-                Text(
-                  "Introduction",
-                  style: TextStyle(color: Colors.white),
+                NavItem(
+                  text: "Introduction",
+                  pageIndex: 0,
                 ),
                 SizedBox(
                   width: 30,
                 ),
-                Text(
-                  "Projects",
-                  style: TextStyle(color: Colors.white),
+                NavItem(
+                  text: "Projects",
+                  pageIndex: 0,
                 ),
                 SizedBox(
                   width: 30,
                 ),
-                Text(
-                  "Experience",
-                  style: TextStyle(color: Colors.white),
+                NavItem(
+                  text: "Experience",
+                  pageIndex: 1,
                 ),
                 SizedBox(
                   width: 30,
@@ -68,7 +70,7 @@ class DesktopNavbar extends StatelessWidget {
                     "Contact",
                     style: TextStyle(color: Colors.white),
                   ),
-                )
+                ).showCursorOnHover
               ],
             )
           ],
@@ -98,23 +100,23 @@ class MobileNavbar extends StatelessWidget {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
-                  Text(
-                    "Introduction",
-                    style: TextStyle(color: Colors.white),
+                  NavItem(
+                    text: "Introduction",
+                    pageIndex: 0,
                   ),
                   SizedBox(
                     width: 30,
                   ),
-                  Text(
-                    "Projects",
-                    style: TextStyle(color: Colors.white),
+                  NavItem(
+                    text: "Projects",
+                    pageIndex: 0,
                   ),
                   SizedBox(
                     width: 30,
                   ),
-                  Text(
-                    "Experience",
-                    style: TextStyle(color: Colors.white),
+                  NavItem(
+                    text: "Experience",
+                    pageIndex: 1,
                   ),
                 ],
               ),

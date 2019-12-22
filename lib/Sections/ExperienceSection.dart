@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../Widgets/IconRow.dart';
 
-class KnowledgeSection extends StatelessWidget {
+class ExperienceSection extends StatelessWidget {
   List<Widget> pageChildren(double width) {
     return <Widget>[
       Padding(
@@ -19,7 +19,7 @@ class KnowledgeSection extends StatelessWidget {
         child: Column(
           children: <Widget>[
             Text(
-              "Knowledge",
+              "Experience",
               style: TextStyle(
                   fontWeight: FontWeight.bold,
                   fontSize: 40.0,
