@@ -55,7 +55,7 @@ class IntroductionSectionWidget extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 20.0),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(0, 0, 0, 110),
-          child: Image.asset(
+          child: new Image.asset(
             "assets/images/Dedicated.png",
             width: width,
           ),

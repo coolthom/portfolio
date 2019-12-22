@@ -8,8 +8,8 @@ class KnowledgeSection extends StatelessWidget {
         padding: const EdgeInsets.symmetric(vertical: 20.0),
         child: Padding(
           padding: const EdgeInsets.fromLTRB(0, 0, 0, 110),
-          child: Image.asset(
-            "assets/images/PlanningPhase.PNG",
+          child: new Image.asset(
+            "assets/images/PlanningPhase.png",
             width: width,
           ),
         ),
